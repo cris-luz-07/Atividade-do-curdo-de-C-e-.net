@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <!-- Header => cabeçalho do conteúdo -->
+    <header>
+        <!-- HGROUP => Aqui tem um agrupamento de Hs -->
+        <hgroup>
+            <!-- H1 ... H6 => São tags para título -->
+            <h1>Cadastro de Amigo</h1>
+            <!--<h2>Cadastro de Amigo</h2>
+            <h3>Cadastro de Amigo</h3>
+            <h4>Cadastro de Amigo</h4>
+            <h5>Cadastro de Amigo</h5>
+            <h6>Cadastro de Amigo</h6>-->
+        </hgroup>
+    </header>
+    <!-- section => Conteudo -->
+    <section>
+        <!-- FIELDSET => Coloco uma caixa para um formulário -->
+        <fieldset>
+            <!-- LEGEND => É a descrição do Fieldset, ou um título do Fieldset -->
+            <legend>Cadastrar</legend>
+            <form action= "#">
+            <!-- DIV => Agrupamento de elementos -->
+            <div>
+                <!-- LABEL => Etiqueta -->
+                <label for="txtNome">Nome</label>
+                <!-- <input> eu estou dizendo que estou entrando com 
+                    informações para dentro do sistema -->
+                <input type="text" name="txtNome" id="txtNome" 
+                       placeholder="Digite seu Nome." />
+            </div>
+
+            <div>
+                <label for="Email">E-Mail</label>
+                <!-- type="email"  => eu habilito a validação de formato
+                    de e-mail. -->
+                <input type="email" name="Email" id="Email" 
+                       placeholder="Digite seu E-Mail." />
+            </div>
+
+
+            <div>
+                <label for="DataNascimento">Nascimento</label>
+                <!-- type="date" => eu habilito um calendário -->
+                <input type="date" name="DataNascimento" id="DataNascimento" />
+            </div>
+
+            <div>
+                <label for="Telefone">Telefone</label>
+                <!-- type="tel" => no mobile eu habilito o teclado
+                    numérico -->
+                <input type="tel" name="Telefone" id="Telefone"
+                       placeholder="Digite seu Telefone." />
+            </div>
+            
+             <div>
+               <label for="CPF">CPF</label>
+                <input type="text" name="cpf" id="cpf"
+                       placeholder="999.999.999-oo"/>
+            </div>
+            <div>
+                <label for="Sexo">Sexo</label>
+                <!-- SELECT => Também conhecido como 
+                    COMBO/COMBOBOX/DROPDOWNLIST é uma lista de 
+                    seleção.
+                    OPTION => É a opção que deverá ser selecionada.
+                    SELECTED => O que virá por default selecionado. -->
+                <select>
+                    <option value="1">Feminino</option>
+                    <option value="2">Masculino</option>
+                    <option value="3">Outros</option>
+                    <option value="0" selected>--Selecione--</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="Cor">Cor</label>
+                <!-- type="color" => eu habilito uma paleta de cores. -->
+                <input type="color" name="Cor" id="Cor" />
+            </div>
+             <div>
+                <label for="Ativo">Ativo</label>
+                <!-- type = c. -->
+                <input type="checkbox" name="ativo"/>
+            </div>  
+            <div for"button" id="limpar"
+             button
+            </div>
+            </form>
+        </fieldset>
+
+    </section>
+    <!-- FOOTER => RODAPÉ -->
+    <footer>
+        <!-- P => serve para delimitar um parágrafo -->
+        <p>
+            <!-- &copy => eu faço o C de Copyrigth -->
+            <!-- diferença entre <strong> e <b>
+                STRONG => Importância do texto.
+                B => Texto em negrito.
+                 -->
+            &copy; Todos os direitos reservados ao <strong><em>BOZO</em></strong>.
+        </p>
+        <p>
+            <mark>
+                Proibida a reprodução deste conteúdo sem prévio aviso.
+            </mark>
+
+        </p>
+    </footer>
+</body>
+</html>
